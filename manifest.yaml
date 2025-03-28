@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: nginx
-  namespace: roboshop
+  namespace: suraj
 data:
   nginx.conf: |
     user www-data;
@@ -116,7 +116,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: web
-  namespace: roboshop
+  namespace: suraj
   labels: # these labels belong to deployment
     app: web
     tier: web
@@ -156,7 +156,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: web
-  namespace: roboshop
+  namespace: suraj
 spec:
   type: LoadBalancer
   selector:
