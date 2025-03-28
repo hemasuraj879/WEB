@@ -29,7 +29,7 @@ spec:
             path: nginx.conf
       containers:
       - name: web
-        image:
+        image: 296062550816.dkr.ecr.us-east-1.amazonaws.com/suraj/dev/web:1.0
         imagePullPolicy: Always
         volumeMounts:
         - name: nginx-conf # name of the volume you created above
